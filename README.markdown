@@ -1,4 +1,5 @@
-== Memodia
+Memodia
+=============
 
 Authors:
  Taylor Luk
@@ -8,16 +9,23 @@ Memordia is a open source application written in Ruby on Rails. its perfect to m
 your media library in a simple, organize and accessible manner. 
 
 You will be able to preview, tag your assets, helps you find what you looking for faster 
-and easier. Its a treat for a collabrative or creative environment.
+and easier. Its a treat for a collaborative or creative environment.
 
 
-== Requirement
+Technical
+----------------
+Currently using a attachment rails plugin Paperclip to handle attachment saving, image resizing
 
+
+
+Requirement
+----------------
 * Rails 2.1
 * ImageMagick
 
 
-=== Required gems
+Required gems
+----------------
  * mime-types
 
 -------------------------------------
