@@ -1,3 +1,29 @@
+== Memodia
+
+Authors:
+ Taylor Luk
+ Hong Minhee
+
+Memordia is a open source application written in Ruby on Rails. its perfect to manage 
+your media library in a simple, organize and accessible manner. 
+
+You will be able to preview, tag your assets, helps you find what you looking for faster 
+and easier. Its a treat for a collabrative or creative environment.
+
+
+== Requirement
+
+* Rails 2.1
+* ImageMagick
+
+
+=== Required gems
+ * mime-types
+
+-------------------------------------
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create 
