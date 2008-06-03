@@ -1,0 +1,97 @@
+body {
+	font-family: "Lucida Grande";
+	
+}
+
+a {
+	color:#4183C4;
+	text-decoration:none;
+}
+
+a:hover {
+	
+}
+
+h1, h2 {
+	font-size:2.5em;
+	font-family:georgia;
+}
+
+h2, #content h1 {
+	font-size:1.6em;
+}
+
+
+#info {
+	list-style:none;
+	float:right;
+	width:220px;
+	margin:0;
+}
+	
+	#info li {
+		float:right;
+	}
+	
+	#info a {
+		color:#333;
+		display:block;
+		padding:0 .5em;
+	}
+
+
+#toolbar {
+	list-style:none;
+	background: url(/images/toolbar-bg.png);
+	margin:0;
+	}
+	
+	#toolbar li {
+		float:left;
+	}
+	#toolbar a {
+		color : #333;
+		font-size:1.2em;
+		display:block;
+		padding:.5em 1em;
+	}
+	#toolbar a:hover {
+		color:#000;
+		background:#efefef;
+		border-bottom:2px;
+	}
+	#toolbar .secondary {
+		vertical-align:bottom;
+		font-size:.85em;
+		float:right;
+	}
+	
+#subbar {
+	margin: 0 0 1em 0;
+	padding: 1em;
+	background:#edffe4;
+	height:2em;
+	}
+	
+	
+	.flash-message {
+		background: #FFE4BB;
+		padding:0;margin:0;
+	}
+	
+	body.products a.products,
+	body.pages a.pages,
+	body.collections a.collections,
+	body.dashboards a.dashboards,
+	body.orders a.orders
+	{
+		color:#000;
+		font-weight:bold;
+		background:#efefef;
+	}
+	
+	
+img.border {
+	padding:2px;
+	border:1px solid #eee;
+}

@@ -1,0 +1,17 @@
+<%= error_messages_for :image %>
+<% form_for :image, :url => images_path, :method => :post, :html => { :multipart => true } do |f| %>
+	<fieldset>
+		<div class="message">
+			Only jpg files are allowed.
+		</div>
+		<ol>
+			<li>
+				<label for="photo_file">Photo File</label>
+				<%= f.file_field :file %>
+			</li>
+		</ol>
+	</fieldset>
+	<div class="buttons">
+		<%= f.submit 'Upload Image', :class => 'button upload' %>
+	</div>
+<% end %>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Images: <%= controller.action_name %></title>
+
+  <%= stylesheet_link_tag 'screen' %>  
+  <%= stylesheet_link_tag 'styles' %>
+  <%= stylesheet_link_tag 'upload' %>
+  
+  <%= yield :head %>
+</head>
+<body>
+<div class="container">
+	<div id="header" class="clearfix">
+		<ul id="info" class="">
+			<li><a href="#">help</a></li>
+			<li><a href="/logout">logout</a></li>
+		</ul>
+		
+		<h1>memodia</h1>
+		
+		<ul id="toolbar" class="clearfix">
+			<li><a class="images" href="<%= images_path %>">Images</a></li>
+			<li><a class="tags" href="<%= 'orders_path' %>">Tags</a></li>
+
+		</ul>
+	</div>
+
+<% if flash[:notice] %>
+  <p style="success"><%= flash[:notice] %></p>
+<% end %>
+
+<% if flash[:error] %>
+  <p style="error"><%= flash[:error] %></p>
+<% end %>
+
+<%= yield  %>
+</div>
+
+<%= javascript_include_tag 'mootools' %>
+<%= javascript_include_tag 'swfupload' %>
+<%= javascript_include_tag 'upload' %>
+<%= yield :js %>
+</body>
+</html>
