@@ -14,20 +14,20 @@ and easier. Its a treat for a collaborative or creative environment.
 
 Technical
 ----------------
-Currently using a attachment rails plugin Paperclip to handle attachment saving, image resizing
-
+Currently using a attachment rails plugin Paperclip http://github.com/thoughtbot/paperclip/tree to handle attachment saving, image resizing
 
 
 Requirement
 ----------------
 * Rails 2.1
 * ImageMagick
-
+* Sqlite3
 
 Required gems
 ----------------
+ * ruby-sqlite3
  * mime-types
-
+ 
 -------------------------------------
 
 
